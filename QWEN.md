@@ -1,0 +1,2 @@
+## Qwen Added Memories
+- Available MCP servers: brave-search (6 tools), context7 (2 tools), github (26 tools), sequential-thinking (1 tool), filesystem (14 tools), shadcn (7 tools), supabase (20 tools), and puppeteer (8 tools). The shadcn tools include: get_add_command_for_items, get_audit_checklist, get_item_examples_from_registries, get_project_registries, list_items_in_registries, search_items_in_registries, view_items_in_registries.

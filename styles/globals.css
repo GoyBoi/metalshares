@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans text-everglade bg-spring-wood;
+  }
+}
+
+@layer components {
+  .glass-effect {
+    @apply bg-spring-wood/70 backdrop-blur-sm border border-everglade/20;
+  }
+  
+  .glass-dark {
+    @apply bg-everglade/10 backdrop-blur-sm border border-everglade/20;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
