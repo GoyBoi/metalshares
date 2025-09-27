@@ -30,32 +30,40 @@ const NewsletterForm = ({ className = '' }: NewsletterFormProps) => {
 
   return (
     <div className={`max-w-2xl mx-auto ${className}`}>
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
-        <div className="flex-grow">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 items-stretch" role="form" aria-label="Newsletter subscription form">
+        <div className="flex-grow w-full sm:w-auto">
           <Input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email address"
             required
-            className="w-full py-6 px-6"
+            className="w-full py-6 px-6 h-14" // Using consistent padding with lg buttons
             aria-label="Email address"
+            aria-describedby={message ? "newsletter-form-message" : undefined}
           />
         </div>
         <Button
           type="submit"
           disabled={isSubmitting}
-          className="whitespace-nowrap"
+          size="lg"
+          className="whitespace-nowrap w-full sm:w-auto"
+          aria-label={isSubmitting ? "Subscribing, please wait" : "Subscribe to newsletter"}
         >
           {isSubmitting ? 'Subscribing...' : 'Subscribe'}
         </Button>
       </form>
       {message && (
-        <div className={`mt-4 text-center p-3 rounded-lg ${
-          message.type === 'success' 
-            ? 'bg-de-york/30 text-everglade dark:bg-dark-de-york/30 dark:text-dark-everglade' 
-            : 'bg-pot-pourri text-everglade dark:bg-dark-pot-pourri dark:text-dark-everglade'
-        }`}>
+        <div 
+          id="newsletter-form-message"
+          className={`mt-4 text-center p-4 rounded-lg ${
+            message.type === 'success' 
+              ? 'bg-de-york/20 text-everglade dark:bg-dark-de-york/30 dark:text-dark-everglade' 
+              : 'bg-destructive/20 text-destructive dark:bg-destructive/30 dark:text-destructive-foreground'
+          }`}
+          role="alert"
+          aria-live="polite"
+        >
           {message.text}
         </div>
       )}

@@ -38,17 +38,17 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {['why-metals', 'products', 'trust', 'newsletter'].map((item) => (
-              <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="text-everglade hover:text-limed-oak font-medium transition-colors duration-300 capitalize dark:text-dark-everglade dark:hover:text-dark-limed-oak"
-              >
-                {item.replace('-', ' ')}
-              </button>
-            ))}
-          </nav>
+        <nav className="hidden md:flex space-x-8">
+          {['why-metals', 'products', 'trust', 'newsletter'].map((item) => (
+            <button
+              key={item}
+              onClick={() => scrollToSection(item)}
+              className="text-everglade hover:text-limed-oak font-medium transition-all duration-300 capitalize dark:text-dark-everglade dark:hover:text-dark-limed-oak relative group after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-limed-oak after:transition-all after:duration-300 hover:after:w-full"
+            >
+              {item.replace('-', ' ')}
+            </button>
+          ))}
+        </nav>
 
           {/* Theme Toggle and CTA Button */}
           <div className="hidden md:flex items-center space-x-4">

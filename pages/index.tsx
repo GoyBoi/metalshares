@@ -202,7 +202,7 @@ const Home = () => {
         {/* Why Precious Metals Section */}
         <section 
           id="why-metals"
-          className="py-20 bg-gradient-to-b from-spring-wood to-surf-crest dark:from-dark-spring-wood dark:to-dark-surf-crest transition-colors duration-300"
+          className="py-20 bg-gradient-to-b from-spring-wood to-surf-crest dark:from-dark-spring-wood dark:to-dark-surf-crest transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
@@ -245,7 +245,7 @@ const Home = () => {
         {/* Featured Product - Affiliate Program */}
         <section 
           id="products"
-          className="py-20 bg-gradient-to-b from-surf-crest to-stark-white dark:from-dark-surf-crest dark:to-dark-stark-white transition-colors duration-300"
+          className="py-20 bg-gradient-to-b from-surf-crest to-stark-white dark:from-dark-surf-crest dark:to-dark-stark-white transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
@@ -293,10 +293,10 @@ const Home = () => {
                       </ul>
                     </div>
                     <div className="flex flex-wrap gap-4">
-                      <button className="bg-everglade hover:bg-como text-spring-wood font-medium py-3 px-6 rounded-full transition-colors duration-300 dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood">
+                      <button className="bg-everglade hover:bg-como text-spring-wood font-medium py-3 px-6 rounded-full transition-all duration-300 dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
                         Learn More
                       </button>
-                      <button className="border-2 border-everglade text-everglade hover:bg-everglade hover:text-spring-wood font-medium py-3 px-6 rounded-full transition-colors duration-300 dark:border-dark-everglade dark:text-dark-everglade dark:hover:bg-dark-everglade dark:hover:text-dark-spring-wood">
+                      <button className="border-2 border-everglade text-everglade hover:bg-everglade hover:text-spring-wood font-medium py-3 px-6 rounded-full transition-all duration-300 dark:border-dark-everglade dark:text-dark-everglade dark:hover:bg-dark-everglade dark:hover:text-dark-spring-wood hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
                         See Details
                       </button>
                     </div>
@@ -331,7 +331,7 @@ const Home = () => {
                     <CardDescription className="text-como dark:text-dark-como">{product.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <button className="w-full bg-everglade hover:bg-como text-spring-wood font-medium py-2.5 rounded-full transition-colors duration-300 text-sm dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood">
+                    <button className="w-full bg-everglade hover:bg-como text-spring-wood font-medium py-2.5 rounded-full transition-all duration-300 text-sm dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg">
                       View Details
                     </button>
                   </CardContent>
@@ -344,7 +344,7 @@ const Home = () => {
         {/* Trust/Social Proof Section */}
         <section 
           id="trust"
-          className="py-20 bg-gradient-to-b from-stark-white to-pot-pourri dark:from-dark-stark-white dark:to-dark-pot-pourri transition-colors duration-300"
+          className="py-20 bg-gradient-to-b from-stark-white to-pot-pourri dark:from-dark-stark-white dark:to-dark-pot-pourri transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
@@ -359,7 +359,7 @@ const Home = () => {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
               {trustData.map((item, index) => (
-                <Card key={index} className="glass-effect text-center p-6 bg-spring-wood/50 rounded-2xl dark:bg-dark-spring-wood/50">
+                <Card key={index} className="glass-effect text-center p-6 bg-spring-wood/50 rounded-2xl dark:bg-dark-spring-wood/50 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
                   <div className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-2 dark:text-dark-everglade">{item.value}</div>
                   <div className="text-como dark:text-dark-como">{item.label}</div>
                 </Card>
@@ -424,7 +424,7 @@ const Home = () => {
         {/* Newsletter Section - Mid Page */}
         <section 
           id="newsletter"
-          className="py-20 bg-gradient-to-b from-pot-pourri to-spring-wood dark:from-dark-pot-pourri dark:to-dark-spring-wood transition-colors duration-300"
+          className="py-20 bg-gradient-to-b from-pot-pourri to-spring-wood dark:from-dark-pot-pourri dark:to-dark-spring-wood transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">

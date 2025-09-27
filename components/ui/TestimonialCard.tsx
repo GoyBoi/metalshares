@@ -33,7 +33,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   };
 
   return (
-    <div className={`rounded-2xl border border-everglade/20 bg-spring-wood/70 backdrop-blur-sm shadow-lg p-6 glass-effect transition-colors duration-300 ${className}`}>
+    <div className={`rounded-2xl border border-everglade/20 bg-spring-wood/70 backdrop-blur-sm shadow-lg p-6 glass-effect transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.01] ${className}`}>
       <div className="pt-6">
         <div className="flex mb-4">
           {renderStars()}
