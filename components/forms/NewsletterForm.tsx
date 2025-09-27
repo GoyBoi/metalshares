@@ -53,8 +53,8 @@ const NewsletterForm = ({ className = '' }: NewsletterFormProps) => {
       {message && (
         <div className={`mt-4 text-center p-3 rounded-lg ${
           message.type === 'success' 
-            ? 'bg-de-york/30 text-everglade' 
-            : 'bg-pot-pourri text-everglade'
+            ? 'bg-de-york/30 text-everglade dark:bg-dark-de-york/30 dark:text-dark-everglade' 
+            : 'bg-pot-pourri text-everglade dark:bg-dark-pot-pourri dark:text-dark-everglade'
         }`}>
           {message.text}
         </div>

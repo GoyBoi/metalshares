@@ -145,7 +145,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-spring-wood">
+    <div className="min-h-screen bg-spring-wood dark:bg-dark-spring-wood transition-colors duration-300">
       <Head>
         <title>MetalShares - Invest in Physical Metals with Confidence</title>
         <meta name="description" content="Secure your financial future with our premium precious metals investment platform." />
@@ -202,14 +202,14 @@ const Home = () => {
         {/* Why Precious Metals Section */}
         <section 
           id="why-metals"
-          className="py-20 bg-gradient-to-b from-spring-wood to-surf-crest"
+          className="py-20 bg-gradient-to-b from-spring-wood to-surf-crest dark:from-dark-spring-wood dark:to-dark-surf-crest transition-colors duration-300"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4">
-                Why Invest in <span className="text-limed-oak">Precious Metals</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+                Why Invest in <span className="text-limed-oak dark:text-dark-limed-oak">Precious Metals</span>
               </h2>
-              <p className="text-como max-w-2xl mx-auto">
+              <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
                 Diversify your portfolio with tangible assets that have preserved wealth for thousands of years.
               </p>
             </div>
@@ -222,13 +222,13 @@ const Home = () => {
                     <div className="mr-4">
                       {item.icon}
                     </div>
-                    <CardTitle className="text-everglade">{item.title}</CardTitle>
+                    <CardTitle className="text-everglade dark:text-dark-everglade">{item.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-como">{item.description}</CardDescription>
+                  <CardDescription className="text-como dark:text-dark-como">{item.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="mt-4">
-                    <button className="text-everglade hover:text-limed-oak font-medium flex items-center">
+                    <button className="text-everglade hover:text-limed-oak font-medium flex items-center dark:text-dark-everglade dark:hover:text-dark-limed-oak">
                       Learn more
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -245,14 +245,14 @@ const Home = () => {
         {/* Featured Product - Affiliate Program */}
         <section 
           id="products"
-          className="py-20 bg-gradient-to-b from-surf-crest to-stark-white"
+          className="py-20 bg-gradient-to-b from-surf-crest to-stark-white dark:from-dark-surf-crest dark:to-dark-stark-white transition-colors duration-300"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4">
-                Our <span className="text-limed-oak">Featured Program</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+                Our <span className="text-limed-oak dark:text-dark-limed-oak">Featured Program</span>
               </h2>
-              <p className="text-como max-w-2xl mx-auto">
+              <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
                 Consider our top investment opportunity with special benefits.
               </p>
             </div>
@@ -261,42 +261,42 @@ const Home = () => {
             <div className="max-w-4xl mx-auto mb-20">
               <Card className="glass-effect overflow-hidden">
                 <div className="md:flex">
-                  <div className="md:w-1/3 p-8 flex items-center justify-center bg-de-york/20">
-                    <div className="bg-surf-crest rounded-xl w-full h-64 flex items-center justify-center">
-                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32" />
+                  <div className="md:w-1/3 p-8 flex items-center justify-center bg-de-york/20 dark:bg-dark-de-york/20">
+                    <div className="bg-surf-crest rounded-xl w-full h-64 flex items-center justify-center dark:bg-dark-surf-crest">
+                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-32 h-32 dark:bg-dark-spring-wood/50" />
                     </div>
                   </div>
                   <div className="md:w-2/3 p-8">
                     <div className="flex justify-between items-start mb-4">
                       <div>
-                        <span className="bg-limed-oak text-spring-wood text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="bg-limed-oak text-spring-wood text-xs font-bold px-3 py-1 rounded-full dark:bg-dark-limed-oak dark:text-dark-spring-wood">
                           {featuredProduct.tag}
                         </span>
-                        <h3 className="text-2xl font-bold text-everglade mt-3">{featuredProduct.title}</h3>
+                        <h3 className="text-2xl font-bold text-everglade mt-3 dark:text-dark-everglade">{featuredProduct.title}</h3>
                       </div>
-                      <div className="bg-green-100 text-everglade text-xs font-bold px-3 py-1 rounded-full">
+                      <div className="bg-green-100 text-everglade text-xs font-bold px-3 py-1 rounded-full dark:bg-green-100/30 dark:text-dark-everglade">
                         AFFILIATE
                       </div>
                     </div>
-                    <p className="text-como mb-6">{featuredProduct.description}</p>
+                    <p className="text-como mb-6 dark:text-dark-como">{featuredProduct.description}</p>
                     <div className="mb-6">
-                      <h4 className="font-bold text-everglade mb-2">Key Features:</h4>
+                      <h4 className="font-bold text-everglade mb-2 dark:text-dark-everglade">Key Features:</h4>
                       <ul className="grid grid-cols-2 gap-2">
                         {featuredProduct.features.map((feature, idx) => (
                           <li key={idx} className="flex items-center">
-                            <svg className="w-5 h-5 text-everglade mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="w-5 h-5 text-everglade mr-2 dark:text-dark-everglade" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span className="text-como">{feature}</span>
+                            <span className="text-como dark:text-dark-como">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div className="flex flex-wrap gap-4">
-                      <button className="bg-everglade hover:bg-como text-spring-wood font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                      <button className="bg-everglade hover:bg-como text-spring-wood font-medium py-3 px-6 rounded-full transition-colors duration-300 dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood">
                         Learn More
                       </button>
-                      <button className="border-2 border-everglade text-everglade hover:bg-everglade hover:text-spring-wood font-medium py-3 px-6 rounded-full transition-colors duration-300">
+                      <button className="border-2 border-everglade text-everglade hover:bg-everglade hover:text-spring-wood font-medium py-3 px-6 rounded-full transition-colors duration-300 dark:border-dark-everglade dark:text-dark-everglade dark:hover:bg-dark-everglade dark:hover:text-dark-spring-wood">
                         See Details
                       </button>
                     </div>
@@ -307,10 +307,10 @@ const Home = () => {
             
             {/* Additional Products Grid */}
             <div className="text-center mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4">
-                More <span className="text-limed-oak">Investment Options</span>
+              <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+                More <span className="text-limed-oak dark:text-dark-limed-oak">Investment Options</span>
               </h3>
-              <p className="text-como max-w-xl mx-auto">
+              <p className="text-como max-w-xl mx-auto dark:text-dark-como">
                 Explore our complete selection of precious metals investment products.
               </p>
             </div>
@@ -319,19 +319,19 @@ const Home = () => {
               {productData.map((product, index) => (
                 <Card key={index} className="glass-effect overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
                   <div className="relative">
-                    <div className="bg-surf-crest h-40 flex items-center justify-center">
-                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                    <div className="bg-surf-crest h-40 flex items-center justify-center dark:bg-dark-surf-crest">
+                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 dark:bg-dark-spring-wood/50" />
                     </div>
-                    <div className="absolute top-3 right-3 bg-limed-oak text-spring-wood text-xs font-bold px-2 py-1 rounded-full">
+                    <div className="absolute top-3 right-3 bg-limed-oak text-spring-wood text-xs font-bold px-2 py-1 rounded-full dark:bg-dark-limed-oak dark:text-dark-spring-wood">
                       {product.tag}
                     </div>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-everglade">{product.title}</CardTitle>
-                    <CardDescription className="text-como">{product.description}</CardDescription>
+                    <CardTitle className="text-everglade dark:text-dark-everglade">{product.title}</CardTitle>
+                    <CardDescription className="text-como dark:text-dark-como">{product.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <button className="w-full bg-everglade hover:bg-como text-spring-wood font-medium py-2.5 rounded-full transition-colors duration-300 text-sm">
+                    <button className="w-full bg-everglade hover:bg-como text-spring-wood font-medium py-2.5 rounded-full transition-colors duration-300 text-sm dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood">
                       View Details
                     </button>
                   </CardContent>
@@ -344,14 +344,14 @@ const Home = () => {
         {/* Trust/Social Proof Section */}
         <section 
           id="trust"
-          className="py-20 bg-gradient-to-b from-stark-white to-pot-pourri"
+          className="py-20 bg-gradient-to-b from-stark-white to-pot-pourri dark:from-dark-stark-white dark:to-dark-pot-pourri transition-colors duration-300"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4">
-                Why <span className="text-limed-oak">Trusted</span> by Thousands
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+                Why <span className="text-limed-oak dark:text-dark-limed-oak">Trusted</span> by Thousands
               </h2>
-              <p className="text-como max-w-2xl mx-auto">
+              <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
                 Our track record speaks for itself. Here's what makes us reliable.
               </p>
             </div>
@@ -359,9 +359,9 @@ const Home = () => {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
               {trustData.map((item, index) => (
-                <Card key={index} className="glass-effect text-center p-6 bg-spring-wood/50 rounded-2xl">
-                  <div className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-2">{item.value}</div>
-                  <div className="text-como">{item.label}</div>
+                <Card key={index} className="glass-effect text-center p-6 bg-spring-wood/50 rounded-2xl dark:bg-dark-spring-wood/50">
+                  <div className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-2 dark:text-dark-everglade">{item.value}</div>
+                  <div className="text-como dark:text-dark-como">{item.label}</div>
                 </Card>
               ))}
             </div>
@@ -369,10 +369,10 @@ const Home = () => {
             {/* Testimonials */}
             <div className="mb-16">
               <div className="text-center mb-12">
-                <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4">
-                  What Our <span className="text-limed-oak">Clients Say</span>
+                <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+                  What Our <span className="text-limed-oak dark:text-dark-limed-oak">Clients Say</span>
                 </h3>
-                <p className="text-como max-w-xl mx-auto">
+                <p className="text-como max-w-xl mx-auto dark:text-dark-como">
                   Don't just take our word for it. Hear from real investors who trust us.
                 </p>
               </div>
@@ -396,19 +396,19 @@ const Home = () => {
               <Card className="glass-effect p-8">
                 <div className="flex flex-col md:flex-row items-center">
                   <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-                    <div className="bg-surf-crest rounded-full w-24 h-24 flex items-center justify-center">
-                      <svg className="w-12 h-12 text-everglade" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <div className="bg-surf-crest rounded-full w-24 h-24 flex items-center justify-center dark:bg-dark-surf-crest">
+                      <svg className="w-12 h-12 text-everglade dark:text-dark-everglade" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                       </svg>
                     </div>
                   </div>
                   <div className="md:w-2/3 text-center md:text-left">
-                    <h3 className="text-xl font-bold text-everglade mb-2">Secure Storage & Insurance</h3>
-                    <p className="text-como mb-4">
+                    <h3 className="text-xl font-bold text-everglade mb-2 dark:text-dark-everglade">Secure Storage & Insurance</h3>
+                    <p className="text-como mb-4 dark:text-dark-como">
                       All metals are stored in fully insured, high-security vaults with 24/7 monitoring. 
                       Your investment is protected with the highest industry standards.
                     </p>
-                    <button className="text-everglade hover:text-limed-oak font-medium flex items-center justify-center md:justify-start">
+                    <button className="text-everglade hover:text-limed-oak font-medium flex items-center justify-center md:justify-start dark:text-dark-everglade dark:hover:text-dark-limed-oak">
                       Learn about our security measures
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -424,14 +424,14 @@ const Home = () => {
         {/* Newsletter Section - Mid Page */}
         <section 
           id="newsletter"
-          className="py-20 bg-gradient-to-b from-pot-pourri to-spring-wood"
+          className="py-20 bg-gradient-to-b from-pot-pourri to-spring-wood dark:from-dark-pot-pourri dark:to-dark-spring-wood transition-colors duration-300"
         >
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
                 Market Insights & Updates
               </h2>
-              <p className="text-como mb-8 max-w-2xl mx-auto">
+              <p className="text-como mb-8 max-w-2xl mx-auto dark:text-dark-como">
                 Subscribe to our newsletter for weekly market analysis, investment tips, and exclusive offers.
               </p>
               

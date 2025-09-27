@@ -4,6 +4,7 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class', // Enable dark mode with class strategy
   theme: {
     extend: {
       colors: {
@@ -14,12 +15,26 @@ module.exports = {
         'surf-crest': '#cee3d6',
         'spring-wood': '#f6f8f1',
         
+        // Dark mode variants
+        'dark-everglade': '#0f2a1f',
+        'dark-como': '#3a5f47',
+        'dark-de-york': '#6a9d73',
+        'dark-surf-crest': '#9db3a9',
+        'dark-spring-wood': '#d4d6d1',
+        
         // Old Money palette
         'limed-oak': '#a38c4d',
         'green-smoke': '#b0a56d',
         'thistle-green': '#c8c59d',
         'stark-white': '#e2d6bb',
         'pot-pourri': '#f1dfd5',
+        
+        // Dark mode variants
+        'dark-limed-oak': '#8a7435',
+        'dark-green-smoke': '#8d7f5a',
+        'dark-thistle-green': '#9e9b7d',
+        'dark-stark-white': '#b9a98f',
+        'dark-pot-pourri': '#cbb9a3',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
@@ -45,4 +60,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

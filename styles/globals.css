@@ -8,17 +8,38 @@
   }
   
   body {
-    @apply font-sans text-everglade bg-spring-wood;
+    @apply font-sans bg-spring-wood text-everglade transition-colors duration-300;
+  }
+  
+  .dark body {
+    @apply bg-dark-everglade text-dark-spring-wood;
   }
 }
 
 @layer components {
   .glass-effect {
-    @apply bg-spring-wood/70 backdrop-blur-sm border border-everglade/20;
+    @apply bg-spring-wood/70 backdrop-blur-sm border border-everglade/20 transition-colors duration-300;
+  }
+  
+  .dark .glass-effect {
+    @apply bg-dark-spring-wood/30 border-dark-everglade/40;
   }
   
   .glass-dark {
-    @apply bg-everglade/10 backdrop-blur-sm border border-everglade/20;
+    @apply bg-everglade/10 backdrop-blur-sm border border-everglade/20 transition-colors duration-300;
+  }
+  
+  .dark .glass-dark {
+    @apply bg-dark-everglade/20 border-dark-everglade/30;
+  }
+  
+  /* Dark mode button variants */
+  .dark .btn-everglade {
+    @apply bg-dark-everglade text-dark-spring-wood hover:bg-dark-como;
+  }
+  
+  .dark .btn-outline {
+    @apply border-dark-everglade text-dark-everglade hover:bg-dark-everglade hover:text-dark-spring-wood;
   }
 }
 
