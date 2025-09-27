@@ -58,7 +58,7 @@ const NewsletterForm = ({ className = '' }: NewsletterFormProps) => {
           id="newsletter-form-message"
           className={`mt-4 text-center p-4 rounded-lg ${
             message.type === 'success' 
-              ? 'bg-de-york/20 text-everglade dark:bg-dark-de-york/30 dark:text-dark-everglade' 
+              ? 'bg-de-york/20 text-everglade dark:bg-dark-de-york/30 dark:text-dark-text' 
               : 'bg-destructive/20 text-destructive dark:bg-destructive/30 dark:text-destructive-foreground'
           }`}
           role="alert"

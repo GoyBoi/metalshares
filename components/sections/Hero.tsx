@@ -5,15 +5,15 @@ const Hero = () => {
   return (
     <section 
       id="hero"
-      className="min-h-screen flex items-center pt-16 pb-20 bg-gradient-to-br from-spring-wood to-surf-crest animate-fade-in"
+      className="min-h-screen flex items-center pt-16 pb-20 bg-gradient-to-br from-spring-wood to-surf-crest dark:from-dark-bg dark:to-dark-card animate-fade-in"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-everglade font-serif mb-6 animate-slide-up">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-everglade font-serif mb-6 dark:text-dark-text animate-slide-up">
               Invest in Physical Metals <span className="text-limed-oak">with Confidence</span>
             </h1>
-            <p className="text-lg md:text-xl text-como mb-8 max-w-lg mx-auto lg:mx-0 animate-fade-in">
+            <p className="text-lg md:text-xl text-como mb-8 max-w-lg mx-auto lg:mx-0 dark:text-dark-text/90 animate-fade-in">
               Secure your financial future with our premium precious metals investment platform. 
               Ownership, transparency, and security guaranteed.
             </p>

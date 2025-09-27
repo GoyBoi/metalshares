@@ -12,7 +12,7 @@
   }
   
   .dark body {
-    @apply bg-dark-everglade text-dark-spring-wood;
+    @apply bg-dark-bg text-dark-text;
   }
 }
 
@@ -22,7 +22,7 @@
   }
   
   .dark .glass-effect {
-    @apply bg-dark-spring-wood/30 border-dark-everglade/40;
+    @apply bg-dark-card/80 border-dark-border/50;
   }
   
   .glass-dark {
@@ -30,16 +30,16 @@
   }
   
   .dark .glass-dark {
-    @apply bg-dark-everglade/20 border-dark-everglade/30;
+    @apply bg-dark-card/60 border-dark-border/40;
   }
   
   /* Dark mode button variants */
   .dark .btn-everglade {
-    @apply bg-dark-everglade text-dark-spring-wood hover:bg-dark-como;
+    @apply bg-dark-everglade text-dark-text hover:bg-dark-como;
   }
   
   .dark .btn-outline {
-    @apply border-dark-everglade text-dark-everglade hover:bg-dark-everglade hover:text-dark-spring-wood;
+    @apply border-dark-everglade text-dark-text hover:bg-dark-everglade hover:text-dark-bg;
   }
 }
 

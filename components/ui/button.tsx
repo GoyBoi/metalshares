@@ -10,15 +10,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-everglade text-spring-wood shadow hover:bg-como dark:bg-dark-everglade dark:text-dark-spring-wood dark:hover:bg-dark-como",
+          "bg-everglade text-spring-wood shadow hover:bg-como dark:bg-dark-everglade dark:text-dark-text dark:hover:bg-dark-como",
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border border-everglade text-everglade hover:bg-everglade hover:text-spring-wood dark:border-dark-everglade dark:text-dark-everglade dark:hover:bg-dark-everglade dark:hover:text-dark-spring-wood",
+          "border border-everglade text-everglade hover:bg-everglade hover:text-spring-wood dark:border-dark-everglade dark:text-dark-text dark:hover:bg-dark-everglade dark:hover:text-dark-bg",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80 dark:bg-dark-everglade/30 dark:text-dark-como",
-        ghost: "hover:bg-surf-crest text-everglade dark:hover:bg-dark-como/30 dark:text-dark-surf-crest",
-        link: "text-everglade underline-offset-4 hover:underline dark:text-dark-everglade",
+        ghost: "hover:bg-surf-crest text-everglade dark:hover:bg-dark-border/30 dark:text-dark-text",
+        link: "text-everglade underline-offset-4 hover:underline dark:text-dark-text",
       },
       size: {
         default: "h-10 py-2 px-6",

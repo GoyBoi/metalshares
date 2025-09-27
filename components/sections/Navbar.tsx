@@ -26,7 +26,7 @@ const Navbar = () => {
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'backdrop-blur-md bg-spring-wood/90 glass border-b border-everglade/20 py-2 dark:bg-dark-spring-wood/90 dark:border-dark-everglade/30' 
+          ? 'backdrop-blur-md bg-spring-wood/90 glass border-b border-everglade/20 py-2 dark:bg-dark-bg/90 dark:border-dark-border/30' 
           : 'bg-transparent py-4'
       }`}
     >
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-everglade font-bold text-2xl font-serif dark:text-dark-everglade">MetalShares</div>
+            <div className="text-everglade font-bold text-2xl font-serif dark:text-dark-text">MetalShares</div>
           </div>
 
           {/* Desktop Navigation */}
@@ -43,7 +43,7 @@ const Navbar = () => {
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className="text-everglade hover:text-limed-oak font-medium transition-all duration-300 capitalize dark:text-dark-everglade dark:hover:text-dark-limed-oak relative group after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-limed-oak after:transition-all after:duration-300 hover:after:w-full"
+              className="text-everglade hover:text-limed-oak font-medium transition-all duration-300 capitalize dark:text-dark-text dark:hover:text-dark-limed-oak relative group after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-limed-oak after:transition-all after:duration-300 hover:after:w-full"
             >
               {item.replace('-', ' ')}
             </button>
@@ -86,13 +86,13 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 py-4 backdrop-blur-md bg-spring-wood/90 glass rounded-xl border border-everglade/20 dark:bg-dark-spring-wood/90 dark:border-dark-everglade/30">
+          <div className="md:hidden mt-4 py-4 backdrop-blur-md bg-spring-wood/90 glass rounded-xl border border-everglade/20 dark:bg-dark-bg/90 dark:border-dark-border/30">
             <div className="flex flex-col space-y-4">
               {['why-metals', 'products', 'trust', 'newsletter'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className="text-everglade hover:text-limed-oak font-medium py-2 px-4 rounded-lg hover:bg-surf-crest transition-colors duration-300 capitalize text-left dark:text-dark-everglade dark:hover:text-dark-limed-oak dark:hover:bg-dark-como/30"
+                  className="text-everglade hover:text-limed-oak font-medium py-2 px-4 rounded-lg hover:bg-surf-crest transition-colors duration-300 capitalize text-left dark:text-dark-text dark:hover:text-dark-limed-oak dark:hover:bg-dark-border/30"
                 >
                   {item.replace('-', ' ')}
                 </button>

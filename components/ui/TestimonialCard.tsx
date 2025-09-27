@@ -38,20 +38,20 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <div className="flex mb-4">
           {renderStars()}
         </div>
-        <p className="text-como italic mb-4 dark:text-dark-como">"{content}"</p>
+        <p className="text-como italic mb-4 dark:text-dark-text/90">"{content}"</p>
         <div className="flex items-center">
           <div className="bg-surf-crest rounded-full w-10 h-10 flex items-center justify-center mr-3 dark:bg-dark-surf-crest">
-            <span className="text-everglade font-bold dark:text-dark-everglade">{name.charAt(0)}</span>
+            <span className="text-everglade font-bold dark:text-dark-text">{name.charAt(0)}</span>
           </div>
           <div>
-            <h4 className="font-bold text-everglade dark:text-dark-everglade">{name}</h4>
-            <p className="text-sm text-como dark:text-dark-como">{role}</p>
+            <h4 className="font-bold text-everglade dark:text-dark-text">{name}</h4>
+            <p className="text-sm text-como dark:text-dark-text/80">{role}</p>
             {showVerification && (
               <div className="flex items-center mt-1">
-                <svg className="w-4 h-4 text-everglade mr-1 dark:text-dark-everglade" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 text-everglade mr-1 dark:text-dark-text" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                 </svg>
-                <span className="text-xs text-everglade dark:text-dark-everglade">Verified Investor</span>
+                <span className="text-xs text-everglade dark:text-dark-text">Verified Investor</span>
               </div>
             )}
           </div>

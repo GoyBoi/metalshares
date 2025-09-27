@@ -145,7 +145,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-spring-wood dark:bg-dark-spring-wood transition-colors duration-300">
+    <div className="min-h-screen bg-spring-wood dark:bg-dark-bg transition-colors duration-300">
       <Head>
         <title>MetalShares - Invest in Physical Metals with Confidence</title>
         <meta name="description" content="Secure your financial future with our premium precious metals investment platform." />
@@ -202,14 +202,14 @@ const Home = () => {
         {/* Why Precious Metals Section */}
         <section 
           id="why-metals"
-          className="py-20 bg-gradient-to-b from-spring-wood to-surf-crest dark:from-dark-spring-wood dark:to-dark-surf-crest transition-colors duration-300 animate-fade-in"
+          className="py-20 bg-gradient-to-b from-spring-wood to-surf-crest dark:from-dark-bg dark:to-dark-card transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 Why Invest in <span className="text-limed-oak dark:text-dark-limed-oak">Precious Metals</span>
               </h2>
-              <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
+              <p className="text-como max-w-2xl mx-auto dark:text-dark-text/80">
                 Diversify your portfolio with tangible assets that have preserved wealth for thousands of years.
               </p>
             </div>
@@ -222,9 +222,9 @@ const Home = () => {
                     <div className="mr-4">
                       {item.icon}
                     </div>
-                    <CardTitle className="text-everglade dark:text-dark-everglade">{item.title}</CardTitle>
+                    <CardTitle className="text-everglade dark:text-dark-text">{item.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-como dark:text-dark-como">{item.description}</CardDescription>
+                  <CardDescription className="text-como dark:text-dark-text/80">{item.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="mt-4">
@@ -245,14 +245,14 @@ const Home = () => {
         {/* Featured Product - Affiliate Program */}
         <section 
           id="products"
-          className="py-20 bg-gradient-to-b from-surf-crest to-stark-white dark:from-dark-surf-crest dark:to-dark-stark-white transition-colors duration-300 animate-fade-in"
+          className="py-20 bg-gradient-to-b from-surf-crest to-stark-white dark:from-dark-card dark:to-dark-bg transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 Our <span className="text-limed-oak dark:text-dark-limed-oak">Featured Program</span>
               </h2>
-              <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
+              <p className="text-como max-w-2xl mx-auto dark:text-dark-text/80">
                 Consider our top investment opportunity with special benefits.
               </p>
             </div>
@@ -278,7 +278,7 @@ const Home = () => {
                         AFFILIATE
                       </div>
                     </div>
-                    <p className="text-como mb-6 dark:text-dark-como">{featuredProduct.description}</p>
+                    <p className="text-como mb-6 dark:text-dark-text/80">{featuredProduct.description}</p>
                     <div className="mb-6">
                       <h4 className="font-bold text-everglade mb-2 dark:text-dark-everglade">Key Features:</h4>
                       <ul className="grid grid-cols-2 gap-2">
@@ -287,7 +287,7 @@ const Home = () => {
                             <svg className="w-5 h-5 text-everglade mr-2 dark:text-dark-everglade" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            <span className="text-como dark:text-dark-como">{feature}</span>
+                            <span className="text-como dark:text-dark-text/80">{feature}</span>
                           </li>
                         ))}
                       </ul>
@@ -307,10 +307,10 @@ const Home = () => {
             
             {/* Additional Products Grid */}
             <div className="text-center mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+              <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 More <span className="text-limed-oak dark:text-dark-limed-oak">Investment Options</span>
               </h3>
-              <p className="text-como max-w-xl mx-auto dark:text-dark-como">
+              <p className="text-como max-w-xl mx-auto dark:text-dark-text/80">
                 Explore our complete selection of precious metals investment products.
               </p>
             </div>
@@ -327,8 +327,8 @@ const Home = () => {
                     </div>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-everglade dark:text-dark-everglade">{product.title}</CardTitle>
-                    <CardDescription className="text-como dark:text-dark-como">{product.description}</CardDescription>
+                    <CardTitle className="text-everglade dark:text-dark-text">{product.title}</CardTitle>
+                    <CardDescription className="text-como dark:text-dark-text/80">{product.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <button className="w-full bg-everglade hover:bg-como text-spring-wood font-medium py-2.5 rounded-full transition-all duration-300 text-sm dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg">
@@ -344,11 +344,11 @@ const Home = () => {
         {/* Trust/Social Proof Section */}
         <section 
           id="trust"
-          className="py-20 bg-gradient-to-b from-stark-white to-pot-pourri dark:from-dark-stark-white dark:to-dark-pot-pourri transition-colors duration-300 animate-fade-in"
+          className="py-20 bg-gradient-to-b from-stark-white to-pot-pourri dark:from-dark-card dark:to-dark-bg transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 Why <span className="text-limed-oak dark:text-dark-limed-oak">Trusted</span> by Thousands
               </h2>
               <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
@@ -361,7 +361,7 @@ const Home = () => {
               {trustData.map((item, index) => (
                 <Card key={index} className="glass-effect text-center p-6 bg-spring-wood/50 rounded-2xl dark:bg-dark-spring-wood/50 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
                   <div className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-2 dark:text-dark-everglade">{item.value}</div>
-                  <div className="text-como dark:text-dark-como">{item.label}</div>
+                  <div className="text-como dark:text-dark-text/80">{item.label}</div>
                 </Card>
               ))}
             </div>
@@ -369,12 +369,12 @@ const Home = () => {
             {/* Testimonials */}
             <div className="mb-16">
               <div className="text-center mb-12">
-                <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+                <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                   What Our <span className="text-limed-oak dark:text-dark-limed-oak">Clients Say</span>
                 </h3>
-                <p className="text-como max-w-xl mx-auto dark:text-dark-como">
-                  Don't just take our word for it. Hear from real investors who trust us.
-                </p>
+                <p className="text-como max-w-xl mx-auto dark:text-dark-text/80">
+              Don't just take our word for it. Hear from real investors who trust us.
+            </p>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -404,7 +404,7 @@ const Home = () => {
                   </div>
                   <div className="md:w-2/3 text-center md:text-left">
                     <h3 className="text-xl font-bold text-everglade mb-2 dark:text-dark-everglade">Secure Storage & Insurance</h3>
-                    <p className="text-como mb-4 dark:text-dark-como">
+                    <p className="text-como mb-4 dark:text-dark-text/80">
                       All metals are stored in fully insured, high-security vaults with 24/7 monitoring. 
                       Your investment is protected with the highest industry standards.
                     </p>
@@ -424,14 +424,14 @@ const Home = () => {
         {/* Newsletter Section - Mid Page */}
         <section 
           id="newsletter"
-          className="py-20 bg-gradient-to-b from-pot-pourri to-spring-wood dark:from-dark-pot-pourri dark:to-dark-spring-wood transition-colors duration-300 animate-fade-in"
+          className="py-20 bg-gradient-to-b from-pot-pourri to-spring-wood dark:from-dark-bg dark:to-dark-card transition-colors duration-300 animate-fade-in"
         >
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-everglade">
+              <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 Market Insights & Updates
               </h2>
-              <p className="text-como mb-8 max-w-2xl mx-auto dark:text-dark-como">
+              <p className="text-como mb-8 max-w-2xl mx-auto dark:text-dark-text/80">
                 Subscribe to our newsletter for weekly market analysis, investment tips, and exclusive offers.
               </p>
               

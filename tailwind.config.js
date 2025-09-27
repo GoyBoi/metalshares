@@ -23,6 +23,7 @@ module.exports = {
         'dark-de-york': '#6a9d73',
         'dark-surf-crest': '#9db3a9',
         'dark-spring-wood': '#d4d6d1',
+        'dark-bg': '#1c3239',
         
         // Old Money palette
         'limed-oak': '#a38c4d',
@@ -32,11 +33,16 @@ module.exports = {
         'pot-pourri': '#f1dfd5',
         
         // Dark mode variants
-        'dark-limed-oak': '#8a7435',
-        'dark-green-smoke': '#8d7f5a',
-        'dark-thistle-green': '#9e9b7d',
-        'dark-stark-white': '#b9a98f',
-        'dark-pot-pourri': '#cbb9a3',
+        'dark-limed-oak': '#c9b35b',
+        'dark-green-smoke': '#a89b6a',
+        'dark-thistle-green': '#b8b08a',
+        'dark-stark-white': '#d0c0a0',
+        'dark-pot-pourri': '#e0c9b3',
+        'dark-bg': '#1c3239',
+        'dark-text': '#e6e1d4',
+        'dark-accent': '#a3c4bc',
+        'dark-card': '#2a4248',
+        'dark-border': '#3a5258',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
