@@ -8,8 +8,11 @@ A luxury metals investment platform website built with Next.js, TypeScript, and 
 - Glassmorphism effects on navigation and cards
 - Two distinct color palettes: Luxury Green and Old Money
 - Mobile-first approach with full responsiveness
-- Accessibility compliant (WCAG standards)
+- Accessibility compliant (WCAG 2.1 AA standards)
 - Optimized performance with Next.js best practices
+- Light/dark theme toggle with seamless switching
+- Comprehensive component library with shadcn UI
+- SEO optimized with Schema.org markup
 
 ## Color Palettes
 
@@ -36,14 +39,19 @@ metalshares/
 │   ├── sections/             # Page sections (Hero, Features, etc.)
 │   └── forms/                # Form components (NewsletterForm, etc.)
 ├── pages/                    # Next.js pages (one-page scrollable app)
-│   └── index.tsx             # Main page
+│   ├── index.tsx             # Main page
+│   ├── products.tsx          # Products showcase page
+│   ├── test.tsx              # Styling verification page
+│   └── theme-test.tsx        # Theme testing page
 ├── styles/                   # Styling-related files
 │   ├── globals.css           # Global styles
 │   └── tailwind.config.js    # Tailwind CSS configuration
 ├── docs/                     # Documentation files
-│   ├── file-structure.md     # This file
+│   ├── file-structure.md     # File structure documentation
 │   ├── development-guide.md  # Development guidelines
-│   └── component-usage.md    # Component usage documentation
+│   ├── component-usage.md    # Component usage documentation
+│   ├── website-structure.md  # Website structure documentation
+│   └── project-status.md     # Project status updates
 ├── public/                   # Static assets
 ├── lib/                      # Utility functions and libraries
 ├── types/                    # TypeScript type definitions
@@ -72,4 +80,7 @@ Please read the [Development Guide](./docs/development-guide.md) for coding stan
 
 - [File Structure](./docs/file-structure.md)
 - [Development Guide](./docs/development-guide.md)
-- [Component Usage](./docs/component-usage.md) (coming soon)
+- [Component Usage](./docs/component-usage.md)
+- [Website Structure](./docs/website-structure.md)
+- [Project Status](./docs/project-status.md)
+- [Theme System](./docs/theme-system.md)

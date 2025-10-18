@@ -32,15 +32,6 @@
   .dark .glass-dark {
     @apply bg-dark-card/60 border-dark-border/40;
   }
-  
-  /* Dark mode button variants */
-  .dark .btn-everglade {
-    @apply bg-dark-everglade text-dark-text hover:bg-dark-como;
-  }
-  
-  .dark .btn-outline {
-    @apply border-dark-everglade text-dark-text hover:bg-dark-everglade hover:text-dark-bg;
-  }
 }
 
 @layer utilities {

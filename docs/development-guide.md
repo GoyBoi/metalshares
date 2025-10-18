@@ -79,6 +79,45 @@ This document outlines the coding principles, accessibility requirements, and de
 - Everglade (#1a3d2e) - Primary brand color, text on light backgrounds
 - Como (#4f7d5d) - Secondary brand color, accents
 - De York (#8cc090) - Positive actions, highlights
+- Limed Oak (#a38c4d) - Accent color, highlights
+- Spring Wood (#f6f8f1) - Page background, neutral areas
+- Surf Crest (#cee3d6) - Light backgrounds, borders
+- Pot Pourri (#f1dfd5) - Soft backgrounds, highlights
+- Stark White (#e2d6bb) - Light backgrounds
+
+#### Old Money Palette:
+- Limed Oak (#a38c4d) - Primary gold/brown
+- Green Smoke (#b0a56d) - Secondary gold/green
+- Thistle Green (#c8c59d) - Neutral backgrounds
+- Stark White (#e2d6bb) - Light backgrounds
+- Pot Pourri (#f1dfd5) - Soft backgrounds, highlights
+
+#### Dark Mode Variants:
+- Dark Everglade (#0f2a1f) - Primary dark green
+- Dark Como (#3a5f47) - Secondary green
+- Dark De York (#6a9d73) - Light green
+- Dark Limed Oak (#c9b35b) - Gold/brown accent
+- Dark Spring Wood (#d4d6d1) - Lightest green/white background
+- Dark Surf Crest (#9db3a9) - Very light green background
+- Dark Pot Pourri (#e0c9b3) - Light neutral background
+- Dark Stark White (#d0c0a0) - Off-white background
+- Dark Background (#1c3239) - Page background
+- Dark Card (#2a4248) - Card backgrounds
+- Dark Border (#3a5a61) - Borders and dividers
+- Dark Text (#e6e1d4) - Primary text
+
+### Glassmorphism Effect
+- Apply to Navbar and Cards only
+- Use consistent blur and transparency settings
+- Ensure sufficient contrast for readability
+- Implemented through custom Tailwind classes
+
+### Theme System
+- Implement light/dark theme support for all components
+- Use `dark:` prefix for dark mode variants
+- Maintain consistent color contrast ratios (≥ 4.5:1 for normal text)
+- Test components in both themes for visual consistency
+- De York (#8cc090) - Positive actions, highlights
 - Surf Crest (#cee3d6) - Light backgrounds, borders
 - Spring Wood (#f6f8f1) - Page background, neutral areas
 

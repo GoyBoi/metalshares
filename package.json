@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lighthouse": "lhci autorun",
+    "lighthouse:server": "lhci server"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -34,9 +36,11 @@
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1",
     "tailwindcss-animate": "^1.0.7",
+    "web-vitals": "^5.1.0",
     "zod": "^4.1.11"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@playwright/test": "^1.55.1",
     "@types/node": "^20.19.17",
     "@types/react": "^19.1.14",

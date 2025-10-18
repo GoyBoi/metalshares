@@ -9,23 +9,29 @@ This document outlines the directory and file structure for the MetalShares webs
 ```
 metalshares/
 ├── components/                 # All reusable UI components
-│   ├── ui/                   # Basic UI components (buttons, inputs, etc.)
-│   ├── sections/             # Page sections (Hero, Features, etc.)
+│   ├── ui/                   # Basic UI components (buttons, inputs, cards, etc.)
+│   ├── sections/             # Page sections (Navbar, Hero, Footer, etc.)
 │   └── forms/                # Form components (NewsletterForm, etc.)
 ├── pages/                    # Next.js pages (one-page scrollable app)
-│   └── index.tsx             # Main page
+│   ├── index.tsx             # Main page
+│   ├── products.tsx          # Products showcase page
+│   ├── test.tsx              # Styling verification page
+│   └── theme-test.tsx        # Theme testing page
 ├── styles/                   # Styling-related files
 │   ├── globals.css           # Global styles
 │   └── tailwind.config.js    # Tailwind CSS configuration
 ├── docs/                     # Documentation files
 │   ├── file-structure.md     # This file
 │   ├── development-guide.md  # Development guidelines
-│   └── component-usage.md    # Component usage documentation
+│   ├── component-usage.md    # Component usage documentation
+│   ├── website-structure.md  # Website structure documentation
+│   └── project-status.md     # Project status updates
 ├── public/                   # Static assets
 │   ├── images/               # Images and icons
 │   ├── favicon.ico           # Website favicon
 │   └── robots.txt            # SEO configuration
 ├── lib/                      # Utility functions and libraries
+│   └── theme-provider.tsx   # Theme context provider
 ├── types/                    # TypeScript type definitions
 ├── next.config.js            # Next.js configuration
 ├── package.json              # Project dependencies and scripts

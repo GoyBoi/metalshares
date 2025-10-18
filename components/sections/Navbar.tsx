@@ -14,14 +14,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setMobileMenuOpen(false);
-    }
-  };
-
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -39,15 +31,18 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
-          {['why-metals', 'products', 'trust', 'newsletter'].map((item) => (
-            <button
-              key={item}
-              onClick={() => scrollToSection(item)}
-              className="text-everglade hover:text-limed-oak font-medium transition-all duration-300 capitalize dark:text-dark-text dark:hover:text-dark-limed-oak relative group after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-limed-oak after:transition-all after:duration-300 hover:after:w-full"
-            >
-              {item.replace('-', ' ')}
-            </button>
-          ))}
+          <a
+            href="/"
+            className="text-everglade hover:text-limed-oak font-medium transition-all duration-300 capitalize dark:text-dark-text dark:hover:text-dark-limed-oak relative group after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-limed-oak after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Home
+          </a>
+          <a
+            href="/products"
+            className="text-everglade hover:text-limed-oak font-medium transition-all duration-300 capitalize dark:text-dark-text dark:hover:text-dark-limed-oak relative group after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-limed-oak after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Products
+          </a>
         </nav>
 
           {/* Theme Toggle and CTA Button */}
@@ -62,7 +57,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-2 md:hidden">
             <ThemeToggle />
             <button 
-              className="text-everglade focus:outline-none dark:text-dark-everglade"
+              className="text-everglade focus:outline-none dark:text-dark-text"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               aria-label="Toggle menu"
             >
@@ -88,15 +83,18 @@ const Navbar = () => {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 py-4 backdrop-blur-md bg-spring-wood/90 glass rounded-xl border border-everglade/20 dark:bg-dark-bg/90 dark:border-dark-border/30">
             <div className="flex flex-col space-y-4">
-              {['why-metals', 'products', 'trust', 'newsletter'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="text-everglade hover:text-limed-oak font-medium py-2 px-4 rounded-lg hover:bg-surf-crest transition-colors duration-300 capitalize text-left dark:text-dark-text dark:hover:text-dark-limed-oak dark:hover:bg-dark-border/30"
-                >
-                  {item.replace('-', ' ')}
-                </button>
-              ))}
+              <a
+                href="/"
+                className="text-everglade hover:text-limed-oak font-medium py-2 px-4 rounded-lg hover:bg-surf-crest transition-colors duration-300 capitalize text-left dark:text-dark-text dark:hover:text-dark-limed-oak dark:hover:bg-dark-border/30"
+              >
+                Home
+              </a>
+              <a
+                href="/products"
+                className="text-everglade hover:text-limed-oak font-medium py-2 px-4 rounded-lg hover:bg-surf-crest transition-colors duration-300 capitalize text-left dark:text-dark-text dark:hover:text-dark-limed-oak dark:hover:bg-dark-border/30"
+              >
+                Products
+              </a>
               <Button className="w-full max-w-xs mx-auto">
                 Get Started
               </Button>

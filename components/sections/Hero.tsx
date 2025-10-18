@@ -18,45 +18,45 @@ const Hero = () => {
               Ownership, transparency, and security guaranteed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="hover:scale-105 active:scale-95 transition-transform duration-300">
+              <Button size="lg" className="hover:scale-105 active:scale-95 transition-transform duration-300 dark:hover:bg-dark-como">
                 Start Investing
               </Button>
-              <Button variant="outline" size="lg" className="hover:scale-105 active:scale-95 transition-transform duration-300">
+              <Button variant="outline" size="lg" className="hover:scale-105 active:scale-95 transition-transform duration-300 dark:hover:bg-dark-everglade dark:hover:text-dark-bg">
                 Learn More
               </Button>
             </div>
           </div>
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative w-full max-w-lg">
-              <div className="absolute inset-0 bg-limed-oak rounded-3xl transform rotate-6"></div>
-              <div className="absolute inset-0 bg-de-york rounded-3xl transform -rotate-3"></div>
-              <div className="relative bg-spring-wood rounded-3xl p-8 shadow-xl">
-                <div className="bg-surf-crest rounded-2xl p-6">
-                  <h3 className="text-everglade font-bold text-xl mb-4">Why Metals?</h3>
+              <div className="absolute inset-0 bg-limed-oak rounded-3xl transform rotate-6 dark:bg-dark-limed-oak"></div>
+              <div className="absolute inset-0 bg-de-york rounded-3xl transform -rotate-3 dark:bg-dark-de-york"></div>
+              <div className="relative bg-spring-wood rounded-3xl p-8 shadow-xl dark:bg-dark-spring-wood dark:text-dark-text">
+                <div className="bg-surf-crest rounded-2xl p-6 dark:bg-dark-surf-crest">
+                  <h3 className="text-everglade font-bold text-xl mb-4 dark:text-dark-everglade">Why Metals?</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start">
-                      <div className="bg-everglade rounded-full p-1 mr-3 mt-1">
-                        <svg className="w-4 h-4 text-spring-wood" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <div className="bg-everglade rounded-full p-1 mr-3 mt-1 dark:bg-dark-everglade">
+                        <svg className="w-4 h-4 text-spring-wood dark:text-dark-spring-wood" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                       </div>
-                      <span className="text-como">Hedge against inflation</span>
+                      <span className="text-como dark:text-dark-text">Hedge against inflation</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="bg-everglade rounded-full p-1 mr-3 mt-1">
-                        <svg className="w-4 h-4 text-spring-wood" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <div className="bg-everglade rounded-full p-1 mr-3 mt-1 dark:bg-dark-everglade">
+                        <svg className="w-4 h-4 text-spring-wood dark:text-dark-spring-wood" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                       </div>
-                      <span className="text-como">Tangible asset ownership</span>
+                      <span className="text-como dark:text-dark-text">Tangible asset ownership</span>
                     </li>
                     <li className="flex items-start">
-                      <div className="bg-everglade rounded-full p-1 mr-3 mt-1">
-                        <svg className="w-4 h-4 text-spring-wood" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <div className="bg-everglade rounded-full p-1 mr-3 mt-1 dark:bg-dark-everglade">
+                        <svg className="w-4 h-4 text-spring-wood dark:text-dark-spring-wood" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                         </svg>
                       </div>
-                      <span className="text-como">Portfolio diversification</span>
+                      <span className="text-como dark:text-dark-text">Portfolio diversification</span>
                     </li>
                   </ul>
                 </div>

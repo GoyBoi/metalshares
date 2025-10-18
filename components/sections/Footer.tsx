@@ -10,7 +10,7 @@ const Footer = ({ id = 'footer' }: FooterProps) => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold font-serif mb-4">MetalShares</h3>
+            <h3 className="text-xl font-bold font-serif mb-4 dark:text-dark-text">MetalShares</h3>
             <p className="text-surf-crest mb-4 dark:text-dark-text">
               Secure your financial future with our premium precious metals investment platform.
             </p>
@@ -37,7 +37,7 @@ const Footer = ({ id = 'footer' }: FooterProps) => {
             <ul className="space-y-2">
               {['Gold Bars', 'Silver Coins', 'Platinum', 'Palladium', 'IRA Options'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-surf-crest hover:text-de-york transition-all duration-300 dark:text-dark-text dark:hover:text-dark-accent hover:translate-x-1 hover:font-medium">
+                  <a href="#" className="text-surf-crest hover:text-de-york transition-all duration-300 dark:text-dark-text/90 dark:hover:text-dark-accent hover:translate-x-1 hover:font-medium">
                     {item}
                   </a>
                 </li>
@@ -50,7 +50,7 @@ const Footer = ({ id = 'footer' }: FooterProps) => {
             <ul className="space-y-2">
               {['About Us', 'How It Works', 'Pricing', 'Blog', 'Careers'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-surf-crest hover:text-de-york transition-all duration-300 dark:text-dark-text dark:hover:text-dark-accent hover:translate-x-1 hover:font-medium">
+                  <a href="#" className="text-surf-crest hover:text-de-york transition-all duration-300 dark:text-dark-text/90 dark:hover:text-dark-accent hover:translate-x-1 hover:font-medium">
                     {item}
                   </a>
                 </li>
@@ -63,7 +63,7 @@ const Footer = ({ id = 'footer' }: FooterProps) => {
             <ul className="space-y-2">
               {['Help Center', 'Contact Us', 'Safety', 'Terms of Service', 'Privacy Policy'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-surf-crest hover:text-de-york transition-all duration-300 dark:text-dark-text dark:hover:text-dark-accent hover:translate-x-1 hover:font-medium">
+                  <a href="#" className="text-surf-crest hover:text-de-york transition-all duration-300 dark:text-dark-text/90 dark:hover:text-dark-accent hover:translate-x-1 hover:font-medium">
                     {item}
                   </a>
                 </li>

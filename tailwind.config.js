@@ -17,12 +17,14 @@ module.exports = {
         'surf-crest': '#cee3d6',
         'spring-wood': '#f6f8f1',
         
-        // Dark mode variants
+        // Dark mode variants for green palette
         'dark-everglade': '#0f2a1f',
         'dark-como': '#3a5f47',
         'dark-de-york': '#6a9d73',
         'dark-surf-crest': '#9db3a9',
         'dark-spring-wood': '#d4d6d1',
+        
+        // Background colors
         'dark-bg': '#1c3239',
         
         // Old Money palette
@@ -32,13 +34,14 @@ module.exports = {
         'stark-white': '#e2d6bb',
         'pot-pourri': '#f1dfd5',
         
-        // Dark mode variants
+        // Dark mode variants for old money palette
         'dark-limed-oak': '#c9b35b',
         'dark-green-smoke': '#a89b6a',
         'dark-thistle-green': '#b8b08a',
         'dark-stark-white': '#d0c0a0',
         'dark-pot-pourri': '#e0c9b3',
-        'dark-bg': '#1c3239',
+        
+        // Dark mode text and UI colors
         'dark-text': '#e6e1d4',
         'dark-accent': '#a3c4bc',
         'dark-card': '#2a4248',

@@ -21,28 +21,28 @@ const TestPage = () => {
         </div>
         
         {/* Test Color Palette */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg">
-          <h2 className="text-2xl font-bold text-everglade mb-4">Color Palette Test</h2>
+        <div className="rounded-2xl border glass shadow-lg p-6 glass bg-spring-wood/70 backdrop-blur-sm border-everglade/20 dark:bg-dark-card/50 dark:border-dark-border/30">
+          <h2 className="text-2xl font-bold text-everglade mb-4 dark:text-dark-text">Color Palette Test</h2>
           <div className="space-y-3">
             <div className="flex items-center">
               <div className="w-8 h-8 bg-everglade rounded mr-3"></div>
-              <span className="text-everglade">Everglade (#1a3d2e) - Primary</span>
+              <span className="text-everglade dark:text-dark-text">Everglade (#1a3d2e) - Primary</span>
             </div>
             <div className="flex items-center">
               <div className="w-8 h-8 bg-como rounded mr-3"></div>
-              <span className="text-como">Como (#4f7d5d) - Secondary</span>
+              <span className="text-como dark:text-dark-text">Como (#4f7d5d) - Secondary</span>
             </div>
             <div className="flex items-center">
               <div className="w-8 h-8 bg-de-york rounded mr-3"></div>
-              <span className="text-de-york">De York (#8cc090) - Accent</span>
+              <span className="text-de-york dark:text-dark-text">De York (#8cc090) - Accent</span>
             </div>
             <div className="flex items-center">
               <div className="w-8 h-8 bg-limed-oak rounded mr-3"></div>
-              <span className="text-limed-oak">Limed Oak (#a38c4d) - Accent</span>
+              <span className="text-limed-oak dark:text-dark-text">Limed Oak (#a38c4d) - Accent</span>
             </div>
             <div className="flex items-center">
               <div className="w-8 h-8 bg-spring-wood rounded mr-3 border border-everglade/20"></div>
-              <span className="text-everglade">Spring Wood (#f6f8f1) - Background</span>
+              <span className="text-everglade dark:text-dark-text">Spring Wood (#f6f8f1) - Background</span>
             </div>
           </div>
         </div>

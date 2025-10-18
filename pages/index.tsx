@@ -214,26 +214,26 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {whyMetalsData.map((item, index) => (
-              <Card key={index} className="glass-effect min-h-[220px]">
-                <CardHeader>
-                  <div className="flex items-center mb-4">
-                    <div className="mr-4">
+              <Card key={index} className="glass-effect">
+                <CardHeader className="p-5">
+                  <div className="flex items-center mb-3">
+                    <div className="mr-3">
                       {item.icon}
                     </div>
-                    <CardTitle className="text-everglade dark:text-dark-text">{item.title}</CardTitle>
+                    <CardTitle className="text-everglade text-lg">{item.title}</CardTitle>
                   </div>
-                  <CardDescription className="text-como dark:text-dark-text/80">{item.description}</CardDescription>
+                  <CardDescription className="text-como text-sm">{item.description}</CardDescription>
                 </CardHeader>
-                <CardContent>
-                  <div className="mt-4">
-                    <button className="text-everglade hover:text-limed-oak font-medium flex items-center dark:text-dark-everglade dark:hover:text-dark-limed-oak">
+                <CardContent className="p-5 pt-0">
+                  <div className="mt-2">
+                    <Button variant="ghost" size="sm" className="text-limed-oak hover:text-everglade font-medium flex items-center text-sm dark:text-dark-text dark:hover:text-dark-everglade">
                       Learn more
-                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="w-4 h-4 ml-1 dark:text-dark-everglade" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                       </svg>
-                    </button>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -272,15 +272,15 @@ const Home = () => {
                         <span className="bg-limed-oak text-spring-wood text-xs font-bold px-3 py-1 rounded-full dark:bg-dark-limed-oak dark:text-dark-spring-wood">
                           {featuredProduct.tag}
                         </span>
-                        <h3 className="text-2xl font-bold text-everglade mt-3 dark:text-dark-everglade">{featuredProduct.title}</h3>
+                        <h3 className="text-2xl font-bold text-everglade mt-3 dark:text-dark-text">{featuredProduct.title}</h3>
                       </div>
-                      <div className="bg-green-100 text-everglade text-xs font-bold px-3 py-1 rounded-full dark:bg-green-100/30 dark:text-dark-everglade">
+                      <div className="bg-green-100 text-everglade text-xs font-bold px-3 py-1 rounded-full dark:bg-green-100/30 dark:text-dark-text">
                         AFFILIATE
                       </div>
                     </div>
                     <p className="text-como mb-6 dark:text-dark-text/80">{featuredProduct.description}</p>
                     <div className="mb-6">
-                      <h4 className="font-bold text-everglade mb-2 dark:text-dark-everglade">Key Features:</h4>
+                      <h4 className="font-bold text-everglade mb-2 dark:text-dark-text">Key Features:</h4>
                       <ul className="grid grid-cols-2 gap-2">
                         {featuredProduct.features.map((feature, idx) => (
                           <li key={idx} className="flex items-center">
@@ -293,12 +293,12 @@ const Home = () => {
                       </ul>
                     </div>
                     <div className="flex flex-wrap gap-4">
-                      <button className="bg-everglade hover:bg-como text-spring-wood font-medium py-3 px-6 rounded-full transition-all duration-300 dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
+                      <Button className="bg-limed-oak hover:bg-green-smoke text-spring-wood font-medium py-3 px-6 rounded-full transition-all duration-300 dark:bg-dark-limed-oak dark:hover:bg-dark-green-smoke dark:text-dark-spring-wood hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
                         Learn More
-                      </button>
-                      <button className="border-2 border-everglade text-everglade hover:bg-everglade hover:text-spring-wood font-medium py-3 px-6 rounded-full transition-all duration-300 dark:border-dark-everglade dark:text-dark-everglade dark:hover:bg-dark-everglade dark:hover:text-dark-spring-wood hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
+                      </Button>
+                      <Button variant="outline" className="border-2 border-limed-oak text-limed-oak hover:bg-limed-oak hover:text-spring-wood font-medium py-3 px-6 rounded-full transition-all duration-300 dark:border-dark-limed-oak dark:text-dark-text dark:hover:bg-dark-limed-oak dark:hover:text-dark-spring-wood hover:scale-105 active:scale-95 shadow-md hover:shadow-lg">
                         See Details
-                      </button>
+                      </Button>
                     </div>
                   </div>
                 </div>
@@ -306,7 +306,7 @@ const Home = () => {
             </div>
             
             {/* Additional Products Grid */}
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 More <span className="text-limed-oak dark:text-dark-limed-oak">Investment Options</span>
               </h3>
@@ -315,25 +315,25 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {productData.map((product, index) => (
-                <Card key={index} className="glass-effect overflow-hidden transition-transform duration-300 hover:scale-[1.02]">
+                <Card key={index} className="glass-effect overflow-hidden transition-transform duration-300 hover:scale-[1.02] text-center p-0">
                   <div className="relative">
-                    <div className="bg-surf-crest h-40 flex items-center justify-center dark:bg-dark-surf-crest">
-                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 dark:bg-dark-spring-wood/50" />
+                    <div className="bg-surf-crest h-32 flex items-center justify-center dark:bg-dark-surf-crest rounded-t-lg">
+                      <div className="bg-gray-200 border-2 border-dashed rounded-xl w-12 h-12 dark:bg-dark-spring-wood/50" />
                     </div>
-                    <div className="absolute top-3 right-3 bg-limed-oak text-spring-wood text-xs font-bold px-2 py-1 rounded-full dark:bg-dark-limed-oak dark:text-dark-spring-wood">
+                    <div className="absolute top-2 right-2 bg-limed-oak text-spring-wood text-xs font-bold px-2 py-1 rounded-full dark:bg-dark-limed-oak dark:text-dark-spring-wood">
                       {product.tag}
                     </div>
                   </div>
-                  <CardHeader>
-                    <CardTitle className="text-everglade dark:text-dark-text">{product.title}</CardTitle>
-                    <CardDescription className="text-como dark:text-dark-text/80">{product.description}</CardDescription>
+                  <CardHeader className="text-center p-3">
+                    <CardTitle className="text-everglade text-lg dark:text-dark-text">{product.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <button className="w-full bg-everglade hover:bg-como text-spring-wood font-medium py-2.5 rounded-full transition-all duration-300 text-sm dark:bg-dark-everglade dark:hover:bg-dark-como dark:text-dark-spring-wood hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg">
+                  <CardContent className="text-center p-3 pt-0">
+                    <CardDescription className="text-como text-sm dark:text-dark-text/80 mb-3">{product.description}</CardDescription>
+                    <Button className="w-full bg-limed-oak hover:bg-green-smoke text-spring-wood font-medium py-2 rounded-full transition-all duration-300 text-sm dark:bg-dark-limed-oak dark:hover:bg-dark-como dark:text-dark-spring-wood hover:scale-[1.02] active:scale-[0.98] shadow-md hover:shadow-lg">
                       View Details
-                    </button>
+                    </Button>
                   </CardContent>
                 </Card>
               ))}
@@ -351,25 +351,25 @@ const Home = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
                 Why <span className="text-limed-oak dark:text-dark-limed-oak">Trusted</span> by Thousands
               </h2>
-              <p className="text-como max-w-2xl mx-auto dark:text-dark-como">
+              <p className="text-como max-w-2xl mx-auto dark:text-dark-text/80">
                 Our track record speaks for itself. Here's what makes us reliable.
               </p>
             </div>
             
             {/* Trust Indicators */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
               {trustData.map((item, index) => (
-                <Card key={index} className="glass-effect text-center p-6 bg-spring-wood/50 rounded-2xl dark:bg-dark-spring-wood/50 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
-                  <div className="text-3xl md:text-4xl font-bold text-everglade font-serif mb-2 dark:text-dark-everglade">{item.value}</div>
-                  <div className="text-como dark:text-dark-text/80">{item.label}</div>
+                <Card key={index} className="glass-effect text-center p-4 bg-spring-wood/50 rounded-xl hover:shadow-lg hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300">
+                  <div className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-1 dark:text-dark-text">{item.value}</div>
+                  <div className="text-como text-sm dark:text-dark-text/80">{item.label}</div>
                 </Card>
               ))}
             </div>
             
             {/* Testimonials */}
-            <div className="mb-16">
-              <div className="text-center mb-12">
-                <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-4 dark:text-dark-text">
+            <div className="mb-12">
+              <div className="text-center mb-10">
+                <h3 className="text-2xl md:text-3xl font-bold text-everglade font-serif mb-3 dark:text-dark-text">
                   What Our <span className="text-limed-oak dark:text-dark-limed-oak">Clients Say</span>
                 </h3>
                 <p className="text-como max-w-xl mx-auto dark:text-dark-text/80">
@@ -377,7 +377,7 @@ const Home = () => {
             </p>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {testimonials.map((testimonial, index) => (
                   <TestimonialCard 
                     key={index}
@@ -403,17 +403,17 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="md:w-2/3 text-center md:text-left">
-                    <h3 className="text-xl font-bold text-everglade mb-2 dark:text-dark-everglade">Secure Storage & Insurance</h3>
+                    <h3 className="text-xl font-bold text-everglade mb-2 dark:text-dark-text">Secure Storage & Insurance</h3>
                     <p className="text-como mb-4 dark:text-dark-text/80">
                       All metals are stored in fully insured, high-security vaults with 24/7 monitoring. 
                       Your investment is protected with the highest industry standards.
                     </p>
-                    <button className="text-everglade hover:text-limed-oak font-medium flex items-center justify-center md:justify-start dark:text-dark-everglade dark:hover:text-dark-limed-oak">
+                    <Button variant="ghost" className="text-limed-oak hover:text-everglade font-medium flex items-center justify-center md:justify-start dark:text-dark-text dark:hover:text-dark-everglade">
                       Learn about our security measures
-                      <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="w-4 h-4 ml-2 dark:text-dark-everglade" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                       </svg>
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </Card>
