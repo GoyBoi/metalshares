@@ -13,6 +13,9 @@ A luxury metals investment platform website built with Next.js, TypeScript, and 
 - Light/dark theme toggle with seamless switching
 - Comprehensive component library with shadcn UI
 - SEO optimized with Schema.org markup
+- OpenSpec-based documentation system
+- Lighthouse CI for performance monitoring
+- Playwright for end-to-end testing
 
 ## Color Palettes
 
@@ -30,31 +33,46 @@ A luxury metals investment platform website built with Next.js, TypeScript, and 
 - **Stark White** (#e2d6bb): Off-white background
 - **Pot Pourri** (#f1dfd5): Light neutral background
 
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Shadcn UI, Radix UI Primitives
+- **Icons**: Lucide React
+- **Forms**: React Hook Form with Zod validation
+- **Theming**: next-themes
+- **Testing**: Playwright, Lighthouse CI
+- **Linting**: ESLint
+- **Documentation**: OpenSpec
+
 ## Directory Structure
 
 ```
 metalshares/
 ├── components/                 # All reusable UI components
 │   ├── ui/                   # Basic UI components (buttons, inputs, etc.)
-│   ├── sections/             # Page sections (Hero, Features, etc.)
+│   ├── sections/             # Page sections (Navbar, Hero, Footer, etc.)
 │   └── forms/                # Form components (NewsletterForm, etc.)
-├── pages/                    # Next.js pages (one-page scrollable app)
-│   ├── index.tsx             # Main page
+├── pages/                    # Next.js pages
+│   ├── index.tsx             # Main landing page
 │   ├── products.tsx          # Products showcase page
 │   ├── test.tsx              # Styling verification page
-│   └── theme-test.tsx        # Theme testing page
-├── styles/                   # Styling-related files
-│   ├── globals.css           # Global styles
+│   ├── button-test.tsx       # Button component testing page
+│   ├── button-theme-test.tsx # Button theme testing page
+│   └── _app.tsx              # Main application wrapper
+│   └── _document.tsx         # Custom document wrapper
+├── styles/                   # Styling files
+│   ├── globals.css           # Global CSS styles and custom classes
 │   └── tailwind.config.js    # Tailwind CSS configuration
-├── docs/                     # Documentation files
-│   ├── file-structure.md     # File structure documentation
-│   ├── development-guide.md  # Development guidelines
-│   ├── component-usage.md    # Component usage documentation
-│   ├── website-structure.md  # Website structure documentation
-│   └── project-status.md     # Project status updates
+├── lib/                      # Utility functions and providers
+├── docs/                     # Project documentation
 ├── public/                   # Static assets
-├── lib/                      # Utility functions and libraries
+├── openspec/                 # OpenSpec specifications
+├── scripts/                  # Build and utility scripts
 ├── types/                    # TypeScript type definitions
+├── tests/                    # Testing files
+├── screenshots/              # Project screenshots
 └── README.md                 # This file
 ```
 
@@ -72,15 +90,83 @@ metalshares/
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run lighthouse` - Run Lighthouse audit
+- `npm run lighthouse:server` - Run Lighthouse CI server
+
+## Documentation
+
+### Current Development Status
+The MetalShares website is a fully functional luxury metals investment platform with:
+- Next.js 15 with TypeScript
+- Tailwind CSS with custom configuration
+- Shadcn UI components with custom styling
+- Luxury Green and Old Money color palettes
+- Glassmorphism design effects
+- Fully responsive design
+- WCAG accessibility compliant
+- Light/dark theme toggle functionality
+
+### Project Structure & Architecture
+- Component-based architecture with reusable UI elements
+- One-page scrollable design with smooth navigation
+- Mobile-first responsive approach
+- Separation of concerns: sections, UI components, and forms
+- Global theme management using next-themes
+- CSS-in-JS with Tailwind utility classes
+
+### Completed Features
+- Hero section with compelling headline and CTA
+- Why Metals section with feature cards
+- Featured Program section with product showcase
+- Trust section with testimonials and statistics
+- Newsletter subscription form with validation
+- Comprehensive footer with company information
+- Responsive navigation with mobile menu
+- Light/dark theme toggle with persistence
+
+### Missing Features (Future Implementation)
+- User dashboard and account management
+- Payment processing integration
+- Portfolio tracking system
+- Market data visualization
+- Educational resources section
+- Advanced analytics and reporting
+
+### Testing & Verification
+- Component rendering verification
+- Theme switching across all pages
+- Contrast ratio compliance checking
+- Responsive design testing
+- Accessibility compliance verification
+- Cross-browser compatibility testing
+- Form validation testing
+- Interactive element functionality testing
+
 ## Contributing
 
 Please read the [Development Guide](./docs/development-guide.md) for coding standards and contribution guidelines.
 
-## Documentation
+## OpenSpec Documentation
 
-- [File Structure](./docs/file-structure.md)
-- [Development Guide](./docs/development-guide.md)
-- [Component Usage](./docs/component-usage.md)
-- [Website Structure](./docs/website-structure.md)
-- [Project Status](./docs/project-status.md)
-- [Theme System](./docs/theme-system.md)
+This project uses OpenSpec for specification-driven development:
+- Website structure specification
+- Build progress tracking specification
+- Theme consistency specifications
+- Component-based architecture specifications
+
+## Performance & Analytics
+
+- Google Analytics 4 integration
+- Schema.org structured data for SEO
+- Lighthouse CI for automated performance auditing
+- WCAG 2.1 AA accessibility compliance
+
+## License
+
+This project is licensed under the MIT License.
